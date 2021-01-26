@@ -2,7 +2,7 @@ const { ethers } = require("ethers");
 const fs = require("fs");
 const Randomness = artifacts.require("Randomness");
 const Lottery = artifacts.require("Lottery");
-const payment = process.env.TRUFFLE_CL_BOX_PAYMENT || "1000000000000000000";
+const payment = process.env.TRUFFLE_CL_BOX_PAYMENT || "1000000000000000000" || "10000000000000000000000" || "10000";
 let raw = fs.readFileSync("../abis/LinkToken.json");
 const ABI = JSON.parse(raw);
 
