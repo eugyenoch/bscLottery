@@ -9,7 +9,7 @@ const ABI = JSON.parse(raw);
 module.exports = async function(callback) {
   const provider = new ethers.providers.JsonRpcProvider(process.env.RPC_URL);
   // Hard coded for ropsten
-  const linkAddress = "0x20fE562d797A42Dcb3399062AE9546cd06f63280";
+  const linkAddress = "0x9EA8d6272B724AfB813A9E7C4eaF07C7aF4FE996";
   const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
   const linkContract = new ethers.Contract(linkAddress, ABI, wallet);
 
