@@ -65,8 +65,8 @@ class App extends Component {
     } catch (error) {
       console.log(error);
     }
-    // 0x5036F68EFAE0F4729789684bdbD506FBEe68d250
-    // 0x5036f68efae0f4729789684bdbd506fbee68d250
+    // 0x9EA8d6272B724AfB813A9E7C4eaF07C7aF4FE996
+    // 0x9EA8d6272B724AfB813A9E7C4eaF07C7aF4FE996
     if (
       accounts[0].toString().toLowerCase() ==
       this.state.manager.toString().toLowerCase()
